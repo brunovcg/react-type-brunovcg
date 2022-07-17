@@ -26,9 +26,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "type:check": "tsc",
+    "lint": "eslint --ext .tsx,.ts .",
     "format:check": "prettier . --ignore-path .gitignore --check",
     "format:fix": "prettier . --ignore-path .gitignore --write",
-    "validate": "run-p format:check",
+    "validate": "run-p lint type:check format:check",
     "prepare": "husky install"
   },
   "eslintConfig": {
