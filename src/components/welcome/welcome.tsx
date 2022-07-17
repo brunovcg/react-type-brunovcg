@@ -17,7 +17,7 @@ const Img = styled.img`
 
 export default function Welcome() {
   const { width, height } = useWindowDimensions()
-
+  const a = 6
   return (
     <div
       style={{
